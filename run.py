@@ -34,7 +34,7 @@ y = df.res
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.99)
 from sklearn.svm import SVC
 model_s = SVC(C=5,gamma ='auto' )
-print(X_train) 
+print(X_train)
 model_s.fit(X_train, y_train)
 model_s.score(X_test, y_test)
 
@@ -414,12 +414,12 @@ def update_svm(n_clicks, c_val, input1, input2):
             #            dcc.ConfirmDialog(message="Select Country")
             return 'ERROR Same Team Selected '
         else:
-           if a == 1:
-                return 'Stats : Team 1 Won'
+            if a == 1:
+                return 'Stats : Won'
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Team 1 Lost'
+                return 'Stats : Lose'
     else:
         return 'Stats : '
 
@@ -440,11 +440,11 @@ def update_xg(n_clicks, c_val, input1, input2):
             return 'ERROR Same Team Selected '
         else:
             if a == 1:
-                return 'Stats : Team 1 Won'
+                return 'Stats : Won'
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Team 1 Lost'
+                return 'Stats : Lose'
     else:
         return 'Stats : '
 
@@ -464,11 +464,14 @@ def update_lr(n_clicks, c_val, input1, input2):
             return 'ERROR Same Team Selected '
         else:
             if a == 1:
-                return 'Stats : Team 1 Won'
+                return 'Stats : Won'
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Team 1 Lost'
+                return 'Stats : Lose'
+           # else :
+            #    return 'Stats : Draw'
+
     else:
         return 'Stats : '
 

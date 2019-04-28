@@ -1,4 +1,4 @@
-﻿import dash_core_components as dcc
+import dash_core_components as dcc
 import dash_html_components as html
 import dash
 from dash.dependencies import Input, Output, State
@@ -414,12 +414,12 @@ def update_svm(n_clicks, c_val, input1, input2):
             #            dcc.ConfirmDialog(message="Select Country")
             return 'ERROR Same Team Selected '
         else:
-            if a == 1:
-                return 'Stats : Won'
+           if a == 1:
+                return 'Stats : Team 1 Won'
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Lose'
+                return 'Stats : Team 1 Lost'
     else:
         return 'Stats : '
 
@@ -440,11 +440,11 @@ def update_xg(n_clicks, c_val, input1, input2):
             return 'ERROR Same Team Selected '
         else:
             if a == 1:
-                return 'Stats : Won'
+                return 'Stats : Team 1 Won'
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Lose'
+                return 'Stats : Team 1 Lost'
     else:
         return 'Stats : '
 
@@ -464,14 +464,11 @@ def update_lr(n_clicks, c_val, input1, input2):
             return 'ERROR Same Team Selected '
         else:
             if a == 1:
-                return 'Stats : Won'
+                return 'Stats : Team 1 Won'
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Lose'
-           # else :
-            #    return 'Stats : Draw'
-
+                return 'Stats : Team 1 Lost'
     else:
         return 'Stats : '
 

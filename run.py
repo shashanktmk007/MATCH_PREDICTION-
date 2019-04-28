@@ -356,6 +356,7 @@ app.css.append_css({'external_url': 'https://cdn.rawgit.com/plotly/dash-app-styl
 app.css.append_css({'external_url': 'https://raw.githubusercontent.com/shashanktmk007/MATCH_PREDICTION-/master/style.css'})  # noqa: E501
 app.layout = html.Div([
     html.H1("Soccer Predictor ",className="row"),
+    html.Br(),
     #   html.H1(t_value),
     html.Div([
         html.Div([
@@ -379,19 +380,23 @@ app.layout = html.Div([
             placeholder='Select Match Country'
         )], className='three columns')
     ],className="row"),
+    html.Br(),
+    html.Br(),
     html.Button(id='submit-button', n_clicks=0, children='Submit'),
+    html.Br(),
+    html.Br(),
     html.Div([
         html.Div([
             html.Div([
                 html.P('Support Vector Machine'), html.P('Stats : ', id='SVM_P')
-            ], className='three columns')
+            ], className='three columns',style={'borderColor':' #57c5f7','borderWidth': 'medium','borderStyle': 'solid','borderRadius': '3.5%','backgroundColor': '#b0b0b05c','padding':'3%','textAlign': 'center','color': 'black'})
         ],),
         html.Div([
             html.P('Linear Regression'), html.P('Stats : ', id='LR_P')
-        ] ,className='three columns'),
+        ] ,className='three columns',style={'borderColor':' #57c5f7','borderWidth': 'medium','borderStyle': 'solid','borderRadius': '3.5%','backgroundColor': '#b0b0b05c','padding':'3%','textAlign': 'center','color': 'black'}),
         html.Div([
             html.P('XGBoost'), html.P('Stats : ', id='XG_P')
-        ], className='three columns')
+        ], className='three columns',style={'borderColor':' #57c5f7','borderWidth': 'medium','borderStyle': 'solid','borderRadius': '3.5%','backgroundColor': '#b0b0b05c','padding':'3%','textAlign': 'center','color': 'black'})
     ],className="row")
 ])
 

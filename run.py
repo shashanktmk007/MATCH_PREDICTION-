@@ -34,7 +34,7 @@ y = df.res
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.99)
 from sklearn.svm import SVC
 model_s = SVC(C=5,gamma ='auto' )
-print(X_train)
+print(X_train) 
 model_s.fit(X_train, y_train)
 model_s.score(X_test, y_test)
 

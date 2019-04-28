@@ -353,6 +353,7 @@ t_value = [
     {'label': 'FC Lausanne-Sports-LAU', 'value': '7730'},
     {'label': 'Lugano-LUG', 'value': '7896'}]
 app.css.append_css({'external_url': 'https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d266c578d2a6e8850ebce48fdb52759b2aef506/stylesheet-oil-and-gas.css'})  # noqa: E501
+app.css.append_css({'external_url': 'https://raw.githubusercontent.com/shashanktmk007/MATCH_PREDICTION-/master/style.css'})  # noqa: E501
 app.layout = html.Div([
     html.H1("Soccer Predictor ",className="row"),
     #   html.H1(t_value),
@@ -387,7 +388,7 @@ app.layout = html.Div([
         ],),
         html.Div([
             html.P('Linear Regression'), html.P('Stats : ', id='LR_P')
-        ] ,className='three columns',style = {'border-color: #57c5f7;border-width: medium; border-style: solid;border-radius: 3.5%;background-color: #b0b0b05c;padding: 3%;text-align: -webkit-center;color: black;'}),
+        ] ,className='three columns'),
         html.Div([
             html.P('XGBoost'), html.P('Stats : ', id='XG_P')
         ], className='three columns')

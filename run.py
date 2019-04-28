@@ -385,6 +385,7 @@ app.layout = html.Div([
     html.Button(id='submit-button', n_clicks=0, children='Submit'),
     html.Br(),
     html.Br(),
+        html.Br(),
     html.Div([
         html.Div([
             html.Div([
@@ -440,11 +441,11 @@ def update_xg(n_clicks, c_val, input1, input2):
             return 'ERROR Same Team Selected '
         else:
             if a == 1:
-                return 'Stats : Won'
+                return 'Stats : Team 1 Won'
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Lose'
+                return 'Stats : Team 1 Lose'
     else:
         return 'Stats : '
 

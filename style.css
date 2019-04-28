@@ -8,3 +8,13 @@
     text-align: -webkit-center;
     color: black;
 }
+.three.columns {
+    border-color: #57c5f7;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 3.5%;
+    background-color: #b0b0b05c;
+    padding: 3%;
+    text-align: -webkit-center;
+    color: black;
+}

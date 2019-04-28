@@ -387,7 +387,7 @@ app.layout = html.Div([
         ],),
         html.Div([
             html.P('Linear Regression'), html.P('Stats : ', id='LR_P')
-        ] ,className='three columns'),
+        ] ,className='three columns',style = {'border-color: #57c5f7;border-width: medium; border-style: solid;border-radius: 3.5%;background-color: #b0b0b05c;padding: 3%;text-align: -webkit-center;color: black;'}),
         html.Div([
             html.P('XGBoost'), html.P('Stats : ', id='XG_P')
         ], className='three columns')

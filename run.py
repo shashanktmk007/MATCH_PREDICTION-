@@ -416,11 +416,11 @@ def update_svm(n_clicks, c_val, input1, input2):
             return 'ERROR Same Team Selected '
         else:
             if a == 1:
-                return 'Stats : Won'
+                return 'Stats : Team 1  Won'
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Lose'
+                return 'Stats : Team 1 Lost '
     else:
         return 'Stats : '
 
@@ -445,7 +445,7 @@ def update_xg(n_clicks, c_val, input1, input2):
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Team 1 Lose'
+                return 'Stats : Team 1 Lost'
     else:
         return 'Stats : '
 
@@ -465,11 +465,11 @@ def update_lr(n_clicks, c_val, input1, input2):
             return 'ERROR Same Team Selected '
         else:
             if a == 1:
-                return 'Stats : Won'
+                return 'Stats : Team 1 Won'
             elif a == 0:
                 return 'Stats : Draw'
             elif a == -1:
-                return 'Stats : Lose'
+                return 'Stats : Team 1 Lost'
            # else :
             #    return 'Stats : Draw'
 
